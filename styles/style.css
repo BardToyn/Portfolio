@@ -1,0 +1,236 @@
+/*--START-SETTING---*/
+
+/*start-root*/
+
+:root {
+    --block: block;
+    --flex: flex;
+    --column: column;
+    --cntr: center;
+    --space-bt: space-between;
+    --none: none;
+    --white: #fff;
+    --red: #FF4531;
+    --drk-red: #A33327;
+    --trans-red: #a333274d;
+    --grey-bg: #9090904d;
+    --grey: #909090;
+    --dark: #121212;
+}
+
+/*end-root*/
+
+/*start-fonts*/
+
+@font-face {
+    font-family: 'Fira Code';
+    src:  url('../fonts/FiraCode-Regular.woff2') format('woff2'),
+          url('../fonts/FiraCode-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 450;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src:  url('../fonts/Inter-Bold.woff2') format('woff2'),
+          url('../fonts/Inter-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src:  url('../fonts/Inter-Light.woff2') format('woff2'),
+          url('../fonts/Inter-Light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src:  url('../fonts/Inter-Regular.woff2') format('woff2'),
+          url('../fonts/Inter-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src:  url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+          url('../fonts/Inter-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+/*end-fonts*/
+
+/*start-defaut-class*/
+
+
+h1 ,h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+.text-code {
+    font-family: 'Fira Code';
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.text-normal {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+}
+
+.heading {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 79px;
+}
+
+/*end-defaut-class*/
+
+/*--END-SETTING---*/
+
+/*---START-HEADER---*/
+
+.header {
+    padding: 0 5%;
+    height: 100px;
+    display: var(--flex);
+    align-items: var(--cntr);
+    justify-content: var(--space-bt);
+    background-color: var(--grey-bg);
+    box-shadow: 1px 8px 22px #121212;
+}
+
+.logo-wrapper {
+    display: var(--flex);
+    align-items: var(--cntr);
+}
+
+.logo-icon {
+    padding: 10px 9px;
+    text-align: var(--cntr);
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 100px;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.logo-text {
+    margin: 0 10px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.logo-circul {
+    height: 8px;
+    width: 8px;
+    display: var(--block);
+    border-radius: 10px;
+    background-color: var(--red);
+}
+
+.header-link {
+    font-family: 'Fira Code';
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: var(--none);
+    color: var(--grey);
+    transition: 0.3s ease-in-out;
+}
+
+.header-link:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-link:hover {
+    color: var(--red);
+}
+
+.header-link:focus {
+    color: var(--red);
+}
+
+.link-num {
+    color: var(--red);
+}
+
+
+
+/*---END-HEADER---*/
+
+/*---START-HERO---*/
+
+.hero {
+    height: 90vh;
+    display: var(--flex);
+    align-items: var(--cntr);
+}
+
+.hero-article {
+    margin: 5%;
+}
+
+.hero-name {
+    margin-top: 15px;
+    color: var(--red);
+}
+
+.hero-heading {
+    color: var(--drk-red);
+}
+
+.hero-text {
+    max-width: 50%;
+    margin: 35px 0;
+}
+
+.hero-btn {
+    padding: 24px 26px;
+    font-family: 'Fira Code';
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--red);
+    background-color: var(--trans-red);
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+}
+
+/*---END-HERO---*/
