@@ -149,7 +149,7 @@ button {
 /*---START-HEADER---*/
 
 .header {
-    padding: 0 5%;
+    padding: 0 8%;
     width: 100%;
     height: 100px;
     display: var(--flex);
@@ -226,7 +226,7 @@ button {
 /*---START-HERO---*/
 
 .hero {
-    padding: 5%;
+    padding: 5% 8%;
     height: 90vh;
     display: var(--flex);
     align-items: var(--cntr);
@@ -266,7 +266,7 @@ button {
 
 .hero-img {
     width: 25%;
-    border-radius: 100px;
+    border-radius: 20px;
     border: 2px solid var(--drk-red);
     background-color: var(--trans-red);
 }
