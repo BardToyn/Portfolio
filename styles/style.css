@@ -114,16 +114,49 @@ button {
 
 /*--END-SETTING---*/
 
+/*---START-ICONS-WRAP---*/
+
+.icon-wrapper {
+    position: fixed;
+    right: 0;
+    top: 43%;
+    display: var(--flex);
+    flex-direction: var(--column);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--grey-bg);
+}
+
+.icon-link {
+    margin: 15px 15px 0;
+}
+
+.icon-link:last-child {
+    margin-bottom: 15px;
+}
+
+.icon-img {
+    width: 35px;
+    transition: 0.3s ease-in-out;
+}
+
+.icon-img:hover {
+    transform: translateY(-5px);
+}
+
+/*---END-ICONS-WRAP---*/
+
 /*---START-HEADER---*/
 
 .header {
     padding: 0 5%;
+    width: 100%;
     height: 100px;
     display: var(--flex);
     align-items: var(--cntr);
     justify-content: var(--space-bt);
     background-color: var(--grey-bg);
-    box-shadow: 1px 8px 22px #121212;
+    box-shadow: 1px 8px 22px #020202;
 }
 
 .logo-wrapper {
@@ -193,13 +226,11 @@ button {
 /*---START-HERO---*/
 
 .hero {
+    padding: 5%;
     height: 90vh;
     display: var(--flex);
     align-items: var(--cntr);
-}
-
-.hero-article {
-    margin: 5%;
+    justify-content: var(--space-bt);
 }
 
 .hero-name {
@@ -231,6 +262,13 @@ button {
 
 .hero-btn:hover {
     transform: scale(1.1);
+}
+
+.hero-img {
+    width: 25%;
+    border-radius: 100px;
+    border: 2px solid var(--drk-red);
+    background-color: var(--trans-red);
 }
 
 /*---END-HERO---*/
