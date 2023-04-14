@@ -149,9 +149,8 @@ button {
 /*---START-HEADER---*/
 
 .header {
-    padding: 0 8%;
+    padding: 2% 8%;
     width: 100%;
-    height: 100px;
     display: var(--flex);
     align-items: var(--cntr);
     justify-content: var(--space-bt);
@@ -262,6 +261,31 @@ button {
 
 .hero-btn:hover {
     transform: scale(1.1);
+}
+
+#myCanvasContainer{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    font-family: "Open Sans",sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    width: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+#myCanvas {
+    margin: auto;
+    width: 100%;
+}
+#myCanvasContainer li a {
+    font-size: 30px;
+    font-family: font-file-82132;
 }
 
 .hero-img {
