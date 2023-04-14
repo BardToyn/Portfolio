@@ -66,7 +66,6 @@
 
 /*start-defaut-class*/
 
-
 h1 ,h2 {
     margin: 0;
 }
@@ -266,7 +265,7 @@ button {
 #myCanvasContainer{
     -webkit-text-size-adjust: 100%;
     line-height: 1.5;
-    font-family: "Open Sans",sans-serif;
+    font-family: 'Fira Code';
     color: #fff;
     font-size: 1.5rem;
     box-sizing: border-box;
@@ -285,14 +284,98 @@ button {
 }
 #myCanvasContainer li a {
     font-size: 30px;
-    font-family: font-file-82132;
-}
-
-.hero-img {
-    width: 25%;
-    border-radius: 20px;
-    border: 2px solid var(--drk-red);
-    background-color: var(--trans-red);
+    font-family: 'Inter';
+    font-weight: 600;
 }
 
 /*---END-HERO---*/
+
+/*---START-MEDIA-SCREEN---*/
+
+@media  screen and (max-width: 1440px) {
+    
+    /*start-defaut-class*/
+
+        .text-code {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .text-normal {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .heading {
+            font-size: 45px;
+            line-height: 54px;
+        }
+
+    /*end-defaut-class*/
+
+    /*---START-ICONS-WRAP---*/
+
+        .icon-link {
+            margin: 10px 10px 0;
+        }
+
+        .icon-link:last-child {
+            margin-bottom: 10px;
+        }
+
+        .icon-img {
+            width: 25px;
+        }
+
+    /*---END-ICONS-WRAP---*/
+
+    /*---START-HEADER---*/
+
+        .header {
+            padding: 1.6% 8%;
+        }
+
+        .logo-icon {
+            padding: 8px 8px;
+        }
+
+        .logo-text {
+            margin: 0 8px;
+            font-size: 16px;
+        }
+
+        .logo-circul {
+            height: 6px;
+            width: 6px;
+        }
+
+        .header-link {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .header-link:not(:last-child) {
+            margin-right: 25px;
+        }
+
+    /*---END-HEADER---*/
+
+    /*---START-HERO---*/
+
+        .hero-text {
+            max-width: 60%;
+            margin: 25px 0;
+        }
+
+        .hero-btn {
+            padding: 22px 36px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+    /*---END-HERO---*/
+
+}
+
+/*---END-MEDIA-SCREEN---*/
